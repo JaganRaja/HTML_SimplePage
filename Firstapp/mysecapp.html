@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>MyFirstApp</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }   
+        * {
+            box-sizing: border-box;
+            }
+       
+        .header {
+            background-color: blue;
+            color: white;
+            height:85px; 
+            position:relative;       
+                }
+        .footer{
+            background-color: blue;
+            color: white;
+            height: 74px;  
+            padding: 25px;
+            }
+
+        .footer p{
+            font-size: 20px;
+            text-align: center; 
+          }
+
+        .header img{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            height:50px;
+            margin: 15px;
+            width: 250px;   
+            
+            }
+
+        .body{
+            width: 100%;
+            max-height: auto;
+            
+            }
+
+        .nav_menu{
+            width: 30%;
+            background-color: lightblue;
+            height: 500px;
+        }
+
+        .nav_menu ul{
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+       .nav_menu ul li a:hover{
+           
+            background-color: blue;
+            border-left: 4px solid black;  
+            border-right: 4px solid black; 
+            border-bottom: 4px solid black;
+            color: white;
+
+
+        } 
+        .nav_menu ul li a{
+	         display:block;
+	         color: black;
+             text-decoration: none;
+            font-size: 35px;
+    }
+    
+        
+        a.active{
+            background-color: blue;
+            border: 4px solid black;
+            color:white;
+            
+            
+             } 
+        .content{
+            width: 70%;
+            background-color: lightgray;
+            text-align: justify;
+            padding: 70px;
+            height: 500px;
+            overflow: auto;
+            
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .column {
+            float: left;
+        }
+
+        .content h3{
+            font-size: 20px;
+        }
+        .content p{
+            font-size: 20px;
+            
+        }
+        .content a{
+            text-decoration: none;
+        }
+        .content_one,.content_two,.content_three, .content_four{
+            width: 50%;
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center; 
+        }
+        /* .content_one{
+            width: 50%;
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center;
+        } */
+        .content_one img{
+            height:250px;
+           max-width:250px;
+
+        }
+       /*  .content_two{
+            width: 50%;
+            border: 1px solid black;
+            padding: 50px;
+            text-align: center;
+            
+        } */
+        .content_two img{
+            height:250px;
+            width:250px;
+
+        }
+        .image{
+            width: 100%;
+        }
+        .content_three img{
+            height:250px;
+            width:250px;
+        }
+        .content_four img{
+            height:250px;
+            width:250px;
+        }
+         
+    </style>
+
+</head>
+<body>
+<div>
+    <!-- header -->
+    <div class="header">
+        <img src="index.png" alt="">
+        <p>Jakkama</p>
+    </div>
+
+    <!-- common body for navigation pane and content -->
+    <div class="body clearfix">
+        <!-- navigation pane -->
+        <div class="column nav_menu">
+            <ul>
+                <li><a href="MyFirstApp.html" >HOME</a></li>
+                <li><a href="Mysecapp.html" class="active" style="color: white">ABOUT</a></li>
+                <li><a href="#PHP">PHP</a></li>
+                
+            </ul>
+        </div>
+        <!-- content -->
+        <div class="column content">
+            <h3>Programming</h3>
+            <br/>
+            <div class="image">
+            <div class="column content_one">
+                <p>JAVA</p>
+                <br/>
+                
+                <img src="java.jpg" alt="java";>
+                <p>This is generally referred as JVM. Before, we discuss about JVM lets see the phases of program execution. 
+                    Phases are as follows: we write the program, then we compile the program and at last we run the program. 
+                    1) Writing of the program is of course done by java programmer like you and me. 2) Compilation of program is done
+                     by javac compiler, javac is the primary java compiler included in java development kit (JDK). It takes java program 
+                     as input and generates java bytecode as output. 3) In third phase, JVM executes the bytecode generated by compiler. 
+                     This is called program run phase.
+                </p>
+            </div>
+            <div class="column content_two">
+                <p>PHP</p>
+                <br/>
+                <img src="php.png" alt="php";>
+                <p>This is generally referred as JVM. Before, we discuss about JVM lets see the phases of program execution. Phases are 
+                    as follows: we write the program, then we compile the program and at last we run the program. 1) Writing of the program 
+                    is of course done by java programmer like you and me. 2) Compilation of program is done by javac compiler, javac is 
+                    the primary java compiler included in java development kit (JDK). It takes java program as input and generates java 
+                    bytecode as output. 3) In third phase, JVM executes the bytecode generated by compiler. This is called program run phase.
+                </p>
+            </div>
+            <div class="column content_three">
+                <p>HTML</p>
+                <br/>
+                <img src="html.jpg" alt="html";>
+                <p>This is generally referred as JVM. Before, we discuss about JVM lets see the phases of program execution. Phases are as 
+                    follows: we write the program, then we compile the program and at last we run the program. 1) Writing of the program 
+                    is of course done by java programmer like you and me. 2) Compilation of program is done by javac compiler, javac is the 
+                    primary java compiler included in java development kit (JDK). It takes java program as input and generates java bytecode 
+                    as output. 3) In third phase, JVM executes the bytecode generated by compiler. This is called program run phase.
+                </p>
+            </div>
+            <div class="column content_four">
+                <p>CSS</p>
+                <br/>
+                <img src="css.jpg" alt="html";>
+                <p>This is generally referred as JVM. Before, we discuss about JVM lets see the phases of program execution. Phases are as 
+                    follows: we write the program, then we compile the program and at last we run the program. 1) Writing of the program 
+                    is of course done by java programmer like you and me. 2) Compilation of program is done by javac compiler, javac is 
+                    the primary java compiler included in java development kit (JDK). It takes java program as input and generates 
+                    java bytecode as output. 3) In third phase, JVM executes the bytecode generated by compiler. This is called program 
+                    run phase.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <div>
+        <div class="footer">
+            <p>copy@right 2018</p>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

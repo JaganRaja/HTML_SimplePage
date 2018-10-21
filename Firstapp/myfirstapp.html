@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>MyFirstApp</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }   
+        * {
+            box-sizing: border-box;
+            }
+       
+        .header {
+            background-color: blue;
+            color: white;
+            height:85px; 
+            position:relative;       
+                }
+        .footer{
+            background-color: blue;
+            color: white;
+            height: 74px;  
+            padding: 25px;
+            }
+
+        .footer p{
+            font-size: 20px;
+            text-align: center;  
+          }
+
+        img{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            height:50px;
+            margin: 15px;
+            width: 250px;   
+            
+            }
+
+        .body{
+            width: 100%;
+            max-height: auto;
+            
+            }
+
+        .nav_menu{
+            width: 30%;
+            background-color: lightblue;
+            height: 500px;
+        }
+
+        .nav_menu ul{
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+       .nav_menu ul li a:hover{
+           
+            background-color: blue;
+            border-left: 4px solid black;  
+            border-right: 4px solid black; 
+            border-bottom: 4px solid black;
+            color: white;
+
+
+        } 
+        .nav_menu ul li a{
+	         display:block;
+	         color: black;
+             text-decoration: none;
+            font-size: 35px;
+    }
+    
+        
+        a.active{
+            background-color: blue;
+            border: 4px solid black;
+            color:white;
+            
+            
+             } 
+        .content{
+            width: 70%;
+            background-color: lightgray;
+            text-align: justify;
+            padding: 70px;
+            height: 500px;
+            overflow: auto;
+            
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .column {
+            float: left;
+        }
+
+        .content h3{
+            font-size: 20px;
+        }
+        .content p{
+            font-size: 20px;
+            
+        }
+        .content a{
+            text-decoration: none;
+        }
+
+      
+    </style>
+
+</head>
+<body>
+<div>
+    <!-- header -->
+    <div class="header">
+        <img src="index.png" alt="">
+        <p>Jakkama</p>
+    </div>
+
+    <!-- common body for navigation pane and content -->
+    <div class="body clearfix">
+        <!-- navigation pane -->
+        <div class="column nav_menu">
+            <ul>
+                <li><a href="MyFirstApp.html" class="active" style="color: white">HOME</a></li>
+                <li><a href="mysecapp.html">ABOUT</a></li>
+                <li><a href="#PHP">PHP</a></li>
+                
+            </ul>
+        </div>
+        <!-- content -->
+        <div class="column content">
+            <h3>PHP INTRO </h3>
+            <br/>
+            <br/>
+            <p>Php stands for Personal home page,Used for web application PHP will output everything that is not contained 
+                within an opening tag (commonly , however the shorter or ) exactly as it is written All statements in PHP should 
+                end with a semicolon; most of the time only one statement will occur on each line. This denotes to the PHP interpreter 
+                that the statement it has read is complete and that it should anticipate the next (or the ?> tag or EOF, end of file). 
+                This is because different text editors handle new lines differently. The Notepad utility on Microsoft Windows is notorious 
+                for being terrible with UNIX end of line compatibility. This is because Notepad expects \r\n, both a newline and a carriage 
+                return, while UNIX-based systems only insert the \n newline character. Notepad will open a UNIX-style text file and show the 
+                "empty box" unrecognized character instead of the expected line break. Using a more advanced text editor will alleviate these 
+                conflicts; the UNIX style produces a smaller script file because each newline only requires 2 bytes (one character) to break 
+                the line instead of 4 bytes. For large files, this could make a difference but only as far as storage on your server goes, 
+                because the PHP code is never sent to the user's browser, only the result of the PHP commands that were executed; the user 
+                will get nothing more than HTML, ideally. Terminating statements with the semicolon allows coders to squeeze together small 
+                blocks of code on the same line. For example, the following is acceptable
+                <a href="#readmore">Read more</a>
+            </p>
+            
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div>
+        <div class="footer">
+            <p>copy@right 2018</p>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

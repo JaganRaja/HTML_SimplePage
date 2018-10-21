@@ -1,0 +1,46 @@
+body{
+    background-color:powderblue;
+}
+h1{
+    color:blue;
+    font-size: 500%;
+    font-family: Verdana;
+    margin: 50px;
+}
+p{
+    color:tomato;
+    font-size: 300%;
+    font-family: fantasy;
+    border: 1px solid green;
+    padding: 15px;
+    margin: 50px;
+}
+
+#idd{
+    color:yellow;
+}
+
+.classss{
+    color:yellow;
+}
+
+a:link{
+    color:blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color:green;
+    background-color:transparent;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active{
+    color:yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}

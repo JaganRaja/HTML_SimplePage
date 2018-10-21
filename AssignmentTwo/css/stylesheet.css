@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    margin:0;
+    border:0;
+} 
+body{
+    width: 100%;
+    
+}
+.header{
+    opacity: 0.6;
+    height: 70px;
+    background-color:blue;
+}
+.header ul{
+  
+    list-style-type: none;
+    margin-left: 75px;
+    padding: 0;   
+   
+}
+.header li{
+    float: left;
+    
+}
+.header ul li a{
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: white;
+    margin: 15px 3px;
+} 
+.header ul li a.active{
+    color: blue;
+}
+.header ul li a:hover{
+    background-color: li;
+}
+.search-container{
+    float: right;
+    color: white;
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 100%;
+    height: 220px;
+    
+}
+.image h1{
+    position: absolute;
+    right: 150px;
+    top: 3px;
+    font-size: 50px;
+    color: white;
+}
+.image .sub_header{
+    position: absolute;
+    top: 50px;
+    right: 180px;
+    color: white;
+    font-size: 13px;
+}
+.image .tick_content{
+    position: absolute;
+    top: 80px;
+}
+
+.header input{
+    margin: 25px 60px;
+    float: right;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;   
+}
+.image .Image_list{
+    position: absolute;
+    font-size: 30px;
+    top: 90px;
+    right: 250px;
+    color: white; 
+}
+.image ul{
+    list-style-type: none;
+    margin-left: 75px;
+    padding: 5px;    
+}
+
+ul.Image_list li{
+    padding: 4px;
+}
+.content{
+    width: 100%;
+    /* background-color: lightyellow; */
+    overflow: hidden; 
+    padding: 1% 5%;
+}
+.content .children1{
+    width: 30%;
+    float: left;
+}
+.content .children2{
+    width: 30%;
+    float: left;
+    margin-left: 50px;
+}
+.content .children3{
+    width: 30%;
+    float: left;
+    margin-left: 50px;
+    
+  }
+.content .children1 img, .children2 img, .children3 img{
+   width: 40px;
+   float: left;
+   height: 30px;
+   
+}
+.children1 h1, .children2 h1, .children3 h1{
+    font-size: 20px;
+    padding-top: 5px;  
+}
+.children1 p, .children2 p, .children3 p{
+  clear: both;
+  text-align: justify;
+}
+.children1 a, .children2 a, .children3 a{
+    text-decoration: none;
+}
+
+.text{
+    width:100%;
+    overflow: hidden;
+    padding: 0% 5%;
+    /* background-color: brown; */
+    text-align: center;
+    /* height: 200px; */
+    margin-top: 20px;
+}
+.gallery1 {
+    float: left;
+    width: 20%;
+    /* background-color: green; */
+    
+}
+.gallery1 img{
+    width: 100%;
+    height: 150px;
+}
+.gallery2 {
+    float: left;
+    width: 20%;
+    margin-left: 74px;
+    /* background-color: blue; */
+}
+.gallery2 img{
+    width: 100%;
+    height: 150px;
+}
+.gallery3 {
+    float: left;
+    width: 20%;
+    margin-left: 74px;
+    /* background-color: red; */
+}
+.gallery3 img{
+    width: 100%;
+    height: 150px;
+}
+.gallery4 {
+    float: left;
+    width: 20%;
+    margin-left: 74px;
+    /* background-color: violet; */
+}
+.gallery4 img{
+    width: 100%;
+    height: 150px;
+}
+.text p{
+    color: blue;
+}
